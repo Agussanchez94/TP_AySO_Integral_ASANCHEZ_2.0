@@ -45,12 +45,10 @@ Vagrant.configure("2") do |config|
 
 
 # Puedo Ejecutar un script que esta en un archivo
-      vmHost1.vm.provision "shell", path: "script_Enable_ssh_password.sh"
+      vmHost1.vm.provision "shell",privileged: false, path: "script_Enable_ssh_password.sh"
       vmHost1.vm.provision "shell", privileged: false, path: "script_Fix_history.sh"
-      vmHost1.vm.provision "shell", path: "instala_paquetes.sh"
-      vmHost1.vm.provision "shell", privileged: false, inline: <<-SHELL
-      
-      SHELL
+      vmHost1.vm.provision "shell",privileged: true, path: "instala_paquetes.sh"
+  vmHost1.vm.provision "shell", privileged: false,  path: "script_ssh_keygen.sh" 
     end
 
 
@@ -97,7 +95,7 @@ Vagrant.configure("2") do |config|
       nmcli con up "$CONN"
       SHELL
 
-#Configuro sudo sin password
+#Configuro sudo sin password (inline: <<SHELL comando directos SHELL)
 
  vmHost2.vm.provision "shell", inline: <<-SHELL
     echo "vagrant ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/vagrant
@@ -105,13 +103,12 @@ Vagrant.configure("2") do |config|
   SHELL
     
     
-# Puedo Ejecutar un script que esta en un archivo
-    vmHost2.vm.provision "shell", path: "script_Enable_ssh_password.sh"
+# Ejecuto los scripts
+    vmHost2.vm.provision "shell",privileged: false, path: "script_Enable_ssh_password.sh"
     vmHost2.vm.provision "shell", privileged: false, path: "script_Fix_history.sh"
+    vmHost2.vm.provision "shell",privileged: true, path: "instala_paquetes_fedora.sh"
+    vmHost2.vm.provision "shell",privileged: false, path: "script_ssh_keygen.sh"
 
-# Provisión para instalar
-    vmHost2.vm.provision "shell", inline: <<-SHELL
-      dnf install -y tree htop tmux vim git curl wget net-tools
-    SHELL
+
   end
 end
