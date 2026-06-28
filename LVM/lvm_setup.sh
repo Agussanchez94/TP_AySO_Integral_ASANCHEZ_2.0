@@ -2,12 +2,71 @@
 
 echo "=== Configurando LVM ==="
 
-# Detectar discos
+#=========Detectar discos
 DISCO_5G=$(lsblk -d -n -o NAME,SIZE | grep "5G" | awk '{print "/dev/" $1}' | head -1)
 DISCO_3G=$(lsblk -d -n -o NAME,SIZE | grep "3G" | awk '{print "/dev/" $1}' | head -1)
+DISCO_2G=$(lsblk -d -n -o NAME,SIZE | grep "2G" | awk '{print "/dev/" $1}' | head -1)
 
 echo "Disco 5G: $DISCO_5G"
 echo "Disco 3G: $DISCO_3G"
+echo "Disco 3G: $DISCO_2G"
+
+
+#===========Verificacion de discos
+if ! sudo fdisk -l | grep "${DISCO_5G}1" &>/dev/null;then 
+	sudo fdisk $DISCO_5G <<EOF
+	n
+	p
+
+
+
+	t
+	8E
+	w
+EOF
+else echo "Ya esta creado el disco ${DISCO_5G}1"
+fi
+
+if ! sudo fdisk -l | grep "${DISCO_3G}1" &>/dev/null;then
+	sudo fdisk $DISCO_3G <<EOF
+        n
+        p
+
+
+
+        t
+        8E
+        w
+EOF
+else echo "Ya esta creado el disco ${DISCO_3G}1"
+fi
+
+if ! sudo fdisk -l | grep "${DISCO_2G}1" &>/dev/null;then
+        sudo fdisk $DISCO_2G <<EOF
+        n
+        p
+
+
+	+1G
+        t
+        82
+        w
+EOF
+
+else echo "Ya esta creado el disco ${DISCO_2G}1"
+fi
+
+
+# Avisar al kernel de los cambios en la tabla de particiones
+sudo partprobe $DISCO_2g
+
+# Formatear como swap
+sudo mkswap ${DISCO_2G}1
+
+# Activar
+sudo swapon ${DISCO_2G}1
+
+
 
 # ===== VG_DATOS (5G) =====
 if ! sudo pvs ${DISCO_5G}1 &>/dev/null; then
@@ -50,6 +109,9 @@ fi
 
 sudo mkswap -f /dev/mapper/vg_temp-lv_swap 2>/dev/null || true
 sudo swapon /dev/mapper/vg_temp-lv_swap 2>/dev/null || true
+
+
+
 
 # ===== FSTAB =====
 sudo grep -q "lv_docker" /etc/fstab || sudo bash -c 'echo "/dev/mapper/vg_datos-lv_docker /var/lib/docker ext4 defaults 0 0" >> /etc/fstab'
