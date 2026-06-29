@@ -1,0 +1,12 @@
+---
+# tasks file for roles/Sudoers_ASANCHEZ
+
+
+- name: Permitir sudo sin contraseña al grupo ASANCHEZ
+  become: yes
+  ansible.builtin.lineinfile:
+    path: /etc/sudoers.d/ASANCHEZ
+    create: yes
+    mode: '0440'
+    line: "%ASANCHEZ ALL=(ALL) NOPASSWD: ALL"
+    validate: "visudo -cf %s"

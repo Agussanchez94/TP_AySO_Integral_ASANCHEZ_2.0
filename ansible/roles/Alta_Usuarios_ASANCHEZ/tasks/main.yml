@@ -1,0 +1,40 @@
+---
+# tasks file for Alta_Usuarios
+
+- name: "Crear grupos primarios"
+  become: yes
+  group:
+    name: "{{ item.grupo }}"
+    state: present
+  loop: "{{ usuarios }}"
+
+- name: "Crear grupo secundario"
+  become: yes
+  group:
+    name: ASANCHEZ
+    state: present
+
+
+
+- name: "Obtener hash de password de vagrant"
+  become: yes
+  shell: "getent shadow vagrant | cut -d: -f2"
+  register: hash_vagrant
+  changed_when: false
+
+- name: "DEBUG - ver el hash obtenido"
+  debug:
+    var: hash_vagrant.stdout
+
+- name: "Crear usuarios R1 a R6"
+  become: yes
+  user:
+    name: "{{ item.nombre }}"
+    group: "{{ item.grupo }}"
+    groups: ASANCHEZ
+    append: no
+    comment: "{{ item.nombre_real }} {{ item.apellido }}"
+    password: "{{ hash_vagrant.stdout }}"
+    shell: /bin/bash
+    create_home: yes
+  loop: "{{ usuarios }}"

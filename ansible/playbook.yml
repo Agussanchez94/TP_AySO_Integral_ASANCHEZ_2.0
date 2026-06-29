@@ -10,9 +10,15 @@
 
   tasks:
     - include_role:
-        name: TP_INI
+        name: TP_INI_ASANCHEZ
+
+    - include_role:
+        name: Alta_Usuarios_ASANCHEZ
+
+    - include_role:
+        name: Sudoers_ASANCHEZ
     
-    - name: "Otra tarea"
-      debug:
-        msg: "Despues de la ejecucion del rol"
+    - include_role:
+        name: Instala_Tool_ASANCHEZ
+
 

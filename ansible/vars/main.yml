@@ -1,4 +1,32 @@
 ---
 # Variables Globales:
+Nombre_Grupo: "ASANCHEZ"
+Division: "Turno Noche"
+Cantidad_Cores: 2
+Distribucion: "Ubuntu / Fedora"
 
-Nombre_Grupo: "Nombre-Grupo-Ejemplo"
+usuarios:
+  - nombre: R1
+    nombre_real: "Agustin"
+    apellido: "Sanchez"
+    grupo: G_R1
+  - nombre: R2
+    nombre_real: "Agustin"
+    apellido: "Sanchez"
+    grupo: G_R2
+  - nombre: R3
+    nombre_real: "Agustin"
+    apellido: "Sanchez"
+    grupo: G_R3
+  - nombre: R4
+    nombre_real: "Agustin"
+    apellido: "Sanchez"
+    grupo: G_R4
+  - nombre: R5
+    nombre_real: "Agustin"
+    apellido: "Sanchez"
+    grupo: G_R5
+  - nombre: R6
+    nombre_real: "Agustin"
+    apellido: "Sanchez"
+    grupo: G_R6
