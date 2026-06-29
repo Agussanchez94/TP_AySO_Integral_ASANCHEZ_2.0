@@ -1,0 +1,1467 @@
+2026-06-28 20:08:18,767 p=41370 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found
+localhost was 127.0.0.1
+
+2026-06-28 20:08:19,234 p=41370 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 20:08:19,257 p=41370 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 20:08:24,411 p=41370 u=vagrant n=ansible | ok: [localhost]
+2026-06-28 20:08:25,149 p=41370 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 20:08:25,164 p=41370 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 20:08:25,247 p=41370 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: Nombre-Grupo-Ejemplo] **********************
+2026-06-28 20:08:25,290 p=41370 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 20:08:25,291 p=41370 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 20:08:25,300 p=41370 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 20:08:25,328 p=41370 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 20:08:25,335 p=41370 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 20:08:25,352 p=41370 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 20:08:25,352 p=41370 u=vagrant n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 20:08:25,352 p=41370 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:15:19,124 p=42419 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found
+localhost was 127.0.0.1
+
+2026-06-28 22:15:19,505 p=42419 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:15:19,535 p=42419 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:15:24,040 p=42419 u=vagrant n=ansible | ok: [localhost]
+2026-06-28 22:15:24,573 p=42419 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:15:24,592 p=42419 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:15:24,659 p=42419 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:15:24,731 p=42419 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:15:24,743 p=42419 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:15:24,750 p=42419 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:15:24,780 p=42419 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:15:24,785 p=42419 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:15:24,803 p=42419 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:15:24,803 p=42419 u=vagrant n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:15:24,803 p=42419 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:23:54,968 p=42806 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found
+localhost was 127.0.0.1
+
+2026-06-28 22:23:55,133 p=42806 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:23:55,144 p=42806 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:23:58,090 p=42806 u=vagrant n=ansible | ok: [localhost]
+2026-06-28 22:23:58,654 p=42806 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:23:58,678 p=42806 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:23:58,734 p=42806 u=vagrant n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to be in '/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/roles/TP_INI/tasks/main.yml': line 8, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: "Crear directorio /tmp/Grupo"
+^ here
+
+2026-06-28 22:23:58,736 p=42806 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:23:58,736 p=42806 u=vagrant n=ansible | 127.0.0.1                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:23:58,736 p=42806 u=vagrant n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:27:20,388 p=43061 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found
+localhost was 127.0.0.1
+
+2026-06-28 22:27:20,543 p=43061 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:27:20,554 p=43061 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:27:23,277 p=43061 u=vagrant n=ansible | ok: [localhost]
+2026-06-28 22:27:23,740 p=43061 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:27:23,754 p=43061 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:27:23,816 p=43061 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:27:23,866 p=43061 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:27:23,868 p=43061 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:27:23,878 p=43061 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:27:24,596 p=43061 u=vagrant n=ansible | changed: [localhost]
+2026-06-28 22:27:24,633 p=43061 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:27:24,650 p=43061 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:27:24,836 p=43061 u=vagrant n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'Variable_Vars_main' is undefined"}
+2026-06-28 22:27:24,854 p=43061 u=vagrant n=ansible | fatal: [127.0.0.1]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'Variable_Vars_main' is undefined"}
+2026-06-28 22:27:24,858 p=43061 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:27:24,859 p=43061 u=vagrant n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:27:24,859 p=43061 u=vagrant n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:29:02,761 p=43413 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found
+localhost was 127.0.0.1
+
+2026-06-28 22:29:02,892 p=43413 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:29:02,902 p=43413 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:29:06,090 p=43413 u=vagrant n=ansible | ok: [localhost]
+2026-06-28 22:29:06,605 p=43413 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:29:06,620 p=43413 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:29:06,687 p=43413 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:29:06,734 p=43413 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:29:06,742 p=43413 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:29:06,756 p=43413 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:29:07,591 p=43413 u=vagrant n=ansible | ok: [localhost]
+2026-06-28 22:29:07,640 p=43413 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:29:07,651 p=43413 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:29:09,231 p=43413 u=vagrant n=ansible | changed: [localhost]
+2026-06-28 22:29:09,301 p=43413 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:29:09,312 p=43413 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:29:09,353 p=43413 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:29:09,358 p=43413 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:29:09,381 p=43413 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:29:09,381 p=43413 u=vagrant n=ansible | 127.0.0.1                  : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:29:09,381 p=43413 u=vagrant n=ansible | localhost                  : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:31:10,789 p=43819 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found
+localhost was 127.0.0.1
+
+2026-06-28 22:31:10,898 p=43819 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:31:10,907 p=43819 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:31:13,438 p=43819 u=vagrant n=ansible | ok: [localhost]
+2026-06-28 22:31:13,966 p=43819 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:31:13,979 p=43819 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:31:14,043 p=43819 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:31:14,085 p=43819 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:31:14,092 p=43819 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:31:14,100 p=43819 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:31:14,827 p=43819 u=vagrant n=ansible | ok: [localhost]
+2026-06-28 22:31:14,879 p=43819 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:31:14,887 p=43819 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:31:16,375 p=43819 u=vagrant n=ansible | changed: [localhost]
+2026-06-28 22:31:16,416 p=43819 u=vagrant n=ansible | ok: [127.0.0.1]
+2026-06-28 22:31:16,427 p=43819 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:31:16,482 p=43819 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:31:16,488 p=43819 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:31:16,510 p=43819 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:31:16,510 p=43819 u=vagrant n=ansible | 127.0.0.1                  : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:31:16,510 p=43819 u=vagrant n=ansible | localhost                  : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:35:02,513 p=44243 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:35:02,524 p=44243 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:35:02,633 p=44243 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.0.2.2 port 2223: Network is unreachable", "unreachable": true}
+2026-06-28 22:35:03,637 p=44243 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:35:03,655 p=44243 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:35:03,697 p=44243 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:35:03,716 p=44243 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:35:03,725 p=44243 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:35:04,119 p=44243 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:35:04,130 p=44243 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:35:04,873 p=44243 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:35:04,889 p=44243 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:35:04,912 p=44243 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:35:04,931 p=44243 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:35:04,931 p=44243 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:35:04,932 p=44243 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:36:19,641 p=44435 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:36:19,656 p=44435 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:36:19,738 p=44435 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.0.2.2 port 2223: Network is unreachable", "unreachable": true}
+2026-06-28 22:36:20,977 p=44435 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:36:20,992 p=44435 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:36:21,032 p=44435 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:36:21,064 p=44435 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:36:21,077 p=44435 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:36:21,485 p=44435 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:36:21,500 p=44435 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:36:22,315 p=44435 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:36:22,334 p=44435 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:36:22,359 p=44435 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:36:22,377 p=44435 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:36:22,378 p=44435 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:36:22,378 p=44435 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:40:37,086 p=44664 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:40:37,095 p=44664 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:40:38,726 p=44664 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:40:39,190 p=44664 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3"}, "exception": "Traceback (most recent call last):\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686437.4699202-44668-200215902740394/AnsiballZ_setup.py\", line 102, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686437.4699202-44668-200215902740394/AnsiballZ_setup.py\", line 94, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686437.4699202-44668-200215902740394/AnsiballZ_setup.py\", line 37, in invoke_module\r\n    from ansible.module_utils import basic\r\n  File \"/tmp/ansible_ansible.legacy.setup_payload_dw9iuyxx/ansible_ansible.legacy.setup_payload.zip/ansible/module_utils/basic.py\", line 176, in <module>\r\nModuleNotFoundError: No module named 'ansible.module_utils.six.moves'\r\n", "failed": true, "module_stderr": "Shared connection to 192.168.56.11 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686437.4699202-44668-200215902740394/AnsiballZ_setup.py\", line 102, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686437.4699202-44668-200215902740394/AnsiballZ_setup.py\", line 94, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686437.4699202-44668-200215902740394/AnsiballZ_setup.py\", line 37, in invoke_module\r\n    from ansible.module_utils import basic\r\n  File \"/tmp/ansible_ansible.legacy.setup_payload_dw9iuyxx/ansible_ansible.legacy.setup_payload.zip/ansible/module_utils/basic.py\", line 176, in <module>\r\nModuleNotFoundError: No module named 'ansible.module_utils.six.moves'\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2026-06-28 22:40:39,207 p=44664 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:40:39,263 p=44664 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:40:39,281 p=44664 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:40:39,290 p=44664 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:40:39,702 p=44664 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:40:39,711 p=44664 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:40:40,409 p=44664 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:40:40,423 p=44664 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:40:40,446 p=44664 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:40:40,463 p=44664 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:40:40,463 p=44664 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:40:40,463 p=44664 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:40:59,703 p=44850 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:40:59,711 p=44850 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:41:01,203 p=44850 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3"}, "exception": "Traceback (most recent call last):\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686459.8801193-44854-154377222750706/AnsiballZ_setup.py\", line 102, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686459.8801193-44854-154377222750706/AnsiballZ_setup.py\", line 94, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686459.8801193-44854-154377222750706/AnsiballZ_setup.py\", line 37, in invoke_module\r\n    from ansible.module_utils import basic\r\n  File \"/tmp/ansible_ansible.legacy.setup_payload_9pfv4csu/ansible_ansible.legacy.setup_payload.zip/ansible/module_utils/basic.py\", line 176, in <module>\r\nModuleNotFoundError: No module named 'ansible.module_utils.six.moves'\r\n", "failed": true, "module_stderr": "Shared connection to 192.168.56.11 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686459.8801193-44854-154377222750706/AnsiballZ_setup.py\", line 102, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686459.8801193-44854-154377222750706/AnsiballZ_setup.py\", line 94, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686459.8801193-44854-154377222750706/AnsiballZ_setup.py\", line 37, in invoke_module\r\n    from ansible.module_utils import basic\r\n  File \"/tmp/ansible_ansible.legacy.setup_payload_9pfv4csu/ansible_ansible.legacy.setup_payload.zip/ansible/module_utils/basic.py\", line 176, in <module>\r\nModuleNotFoundError: No module named 'ansible.module_utils.six.moves'\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2026-06-28 22:41:01,394 p=44850 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:41:01,407 p=44850 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:41:01,445 p=44850 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:41:01,462 p=44850 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:41:01,472 p=44850 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:41:01,899 p=44850 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:41:01,917 p=44850 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:41:02,667 p=44850 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:41:02,674 p=44850 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:41:02,693 p=44850 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:41:02,713 p=44850 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:41:02,716 p=44850 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:41:02,717 p=44850 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:42:48,826 p=45117 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:42:48,838 p=45117 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:42:50,569 p=45117 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3"}, "exception": "Traceback (most recent call last):\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686569.4259079-45122-204759166516879/AnsiballZ_setup.py\", line 102, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686569.4259079-45122-204759166516879/AnsiballZ_setup.py\", line 94, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686569.4259079-45122-204759166516879/AnsiballZ_setup.py\", line 37, in invoke_module\r\n    from ansible.module_utils import basic\r\n  File \"/tmp/ansible_ansible.legacy.setup_payload_76vkoo4k/ansible_ansible.legacy.setup_payload.zip/ansible/module_utils/basic.py\", line 176, in <module>\r\nModuleNotFoundError: No module named 'ansible.module_utils.six.moves'\r\n", "failed": true, "module_stderr": "Shared connection to 192.168.56.11 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686569.4259079-45122-204759166516879/AnsiballZ_setup.py\", line 102, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686569.4259079-45122-204759166516879/AnsiballZ_setup.py\", line 94, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686569.4259079-45122-204759166516879/AnsiballZ_setup.py\", line 37, in invoke_module\r\n    from ansible.module_utils import basic\r\n  File \"/tmp/ansible_ansible.legacy.setup_payload_76vkoo4k/ansible_ansible.legacy.setup_payload.zip/ansible/module_utils/basic.py\", line 176, in <module>\r\nModuleNotFoundError: No module named 'ansible.module_utils.six.moves'\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2026-06-28 22:42:50,594 p=45117 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:42:50,612 p=45117 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:42:50,658 p=45117 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:42:50,675 p=45117 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:42:50,683 p=45117 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:42:50,994 p=45117 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:42:51,003 p=45117 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:42:51,725 p=45117 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:42:51,734 p=45117 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:42:51,747 p=45117 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:42:51,761 p=45117 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:42:51,761 p=45117 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:42:51,761 p=45117 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:45:17,728 p=45340 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:45:17,744 p=45340 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:45:19,174 p=45340 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:45:19,330 p=45340 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: FAILED! => {"ansible_facts": {}, "changed": false, "failed_modules": {"ansible.legacy.setup": {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python3"}, "exception": "Traceback (most recent call last):\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686718.2786913-45345-263293557751182/AnsiballZ_setup.py\", line 102, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686718.2786913-45345-263293557751182/AnsiballZ_setup.py\", line 94, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686718.2786913-45345-263293557751182/AnsiballZ_setup.py\", line 37, in invoke_module\r\n    from ansible.module_utils import basic\r\n  File \"/tmp/ansible_ansible.legacy.setup_payload_gykx54p5/ansible_ansible.legacy.setup_payload.zip/ansible/module_utils/basic.py\", line 176, in <module>\r\nModuleNotFoundError: No module named 'ansible.module_utils.six.moves'\r\n", "failed": true, "module_stderr": "Shared connection to 192.168.56.11 closed.\r\n", "module_stdout": "Traceback (most recent call last):\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686718.2786913-45345-263293557751182/AnsiballZ_setup.py\", line 102, in <module>\r\n    _ansiballz_main()\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686718.2786913-45345-263293557751182/AnsiballZ_setup.py\", line 94, in _ansiballz_main\r\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\r\n  File \"/home/vagrant/.ansible/tmp/ansible-tmp-1782686718.2786913-45345-263293557751182/AnsiballZ_setup.py\", line 37, in invoke_module\r\n    from ansible.module_utils import basic\r\n  File \"/tmp/ansible_ansible.legacy.setup_payload_gykx54p5/ansible_ansible.legacy.setup_payload.zip/ansible/module_utils/basic.py\", line 176, in <module>\r\nModuleNotFoundError: No module named 'ansible.module_utils.six.moves'\r\n", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}}, "msg": "The following modules failed to execute: ansible.legacy.setup\n"}
+2026-06-28 22:45:19,347 p=45340 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:45:19,386 p=45340 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:45:19,412 p=45340 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:45:19,424 p=45340 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:45:19,857 p=45340 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:45:19,867 p=45340 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:45:20,497 p=45340 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:45:20,510 p=45340 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:45:20,532 p=45340 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:45:20,553 p=45340 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:45:20,553 p=45340 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:45:20,553 p=45340 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:50:53,139 p=47393 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 22:50:53,160 p=47393 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 22:50:55,274 p=47393 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 22:50:55,274 p=47393 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:50:55,636 p=47393 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 22:50:55,636 p=47393 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 22:50:55,650 p=47393 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 22:50:55,733 p=47393 u=vagrant n=ansible | included: TP_INI for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-28 22:50:55,752 p=47393 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 22:50:55,798 p=47393 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:50:55,806 p=47393 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 22:50:55,815 p=47393 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 22:50:56,333 p=47393 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:50:56,703 p=47393 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ]
+2026-06-28 22:50:56,713 p=47393 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 22:50:57,521 p=47393 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 22:50:58,406 p=47393 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ]
+2026-06-28 22:50:58,420 p=47393 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 22:50:58,455 p=47393 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:50:58,461 p=47393 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 22:50:58,463 p=47393 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 22:50:58,463 p=47393 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 22:50:58,463 p=47393 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=6    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 23:15:52,623 p=47670 u=vagrant n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator. while parsing a block collection
+  in "<unicode string>", line 12, column 5
+did not find expected '-' indicator
+  in "<unicode string>", line 14, column 5
+
+The error appears to be in '/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/playbook.yml': line 14, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        name: TP_INI
+    -include_role:
+    ^ here
+
+2026-06-28 23:16:18,775 p=47674 u=vagrant n=ansible | ERROR! 'name' is a required field for include_role.
+
+The error appears to be in '/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/playbook.yml': line 14, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+        name: TP_INI
+    - include_role:
+      ^ here
+
+2026-06-28 23:16:45,840 p=47677 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 23:16:45,849 p=47677 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 23:16:47,703 p=47677 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 23:16:47,704 p=47677 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:16:48,087 p=47677 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 23:16:48,087 p=47677 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:16:48,097 p=47677 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 23:16:48,160 p=47677 u=vagrant n=ansible | included: TP_INI for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-28 23:16:48,174 p=47677 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 23:16:48,211 p=47677 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 23:16:48,223 p=47677 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 23:16:48,235 p=47677 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 23:16:48,839 p=47677 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:16:49,222 p=47677 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:16:49,236 p=47677 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 23:16:49,951 p=47677 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:16:50,650 p=47677 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:16:50,673 p=47677 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios] ********************************************
+2026-06-28 23:16:50,734 p=47677 u=vagrant n=ansible | included: Alta_Usuarios for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-28 23:16:50,744 p=47677 u=vagrant n=ansible | TASK [Alta_Usuarios : Crear grupos primarios] **********************************
+2026-06-28 23:16:50,772 p=47677 u=vagrant n=ansible | fatal: [VM1-Grupo-ASANCHEZ]: FAILED! => {"msg": "'usuarios' is undefined"}
+2026-06-28 23:16:50,780 p=47677 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: FAILED! => {"msg": "'usuarios' is undefined"}
+2026-06-28 23:16:50,783 p=47677 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 23:16:50,784 p=47677 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=6    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 23:16:50,784 p=47677 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=6    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 23:20:45,801 p=47912 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 23:20:45,808 p=47912 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 23:20:47,581 p=47912 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 23:20:47,583 p=47912 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:20:47,915 p=47912 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 23:20:47,915 p=47912 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:20:47,924 p=47912 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 23:20:47,983 p=47912 u=vagrant n=ansible | included: TP_INI for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-28 23:20:47,993 p=47912 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 23:20:48,038 p=47912 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 23:20:48,043 p=47912 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 23:20:48,061 p=47912 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 23:20:48,677 p=47912 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:20:49,012 p=47912 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:20:49,024 p=47912 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 23:20:49,801 p=47912 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:20:50,492 p=47912 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:20:50,522 p=47912 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios] ********************************************
+2026-06-28 23:20:50,571 p=47912 u=vagrant n=ansible | included: Alta_Usuarios for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-28 23:20:50,580 p=47912 u=vagrant n=ansible | TASK [Alta_Usuarios : Crear grupos primarios] **********************************
+2026-06-28 23:20:51,120 p=47912 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R1", "nombre": "R1", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R1"}
+2026-06-28 23:20:51,453 p=47912 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R2", "nombre": "R2", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R2"}
+2026-06-28 23:20:51,725 p=47912 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R1", "nombre": "R1", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R1"}
+2026-06-28 23:20:51,800 p=47912 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R3", "nombre": "R3", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R3"}
+2026-06-28 23:20:52,099 p=47912 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R4", "nombre": "R4", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R4"}
+2026-06-28 23:20:52,370 p=47912 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R5", "nombre": "R5", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R5"}
+2026-06-28 23:20:52,648 p=47912 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R2", "nombre": "R2", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R2"}
+2026-06-28 23:20:52,751 p=47912 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R6", "nombre": "R6", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R6"}
+2026-06-28 23:20:53,286 p=47912 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R3", "nombre": "R3", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R3"}
+2026-06-28 23:20:53,993 p=47912 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R4", "nombre": "R4", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R4"}
+2026-06-28 23:20:54,774 p=47912 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R5", "nombre": "R5", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R5"}
+2026-06-28 23:20:55,456 p=47912 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R6", "nombre": "R6", "nombre_real": "Agustin"}, "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", "name": "G_R6"}
+2026-06-28 23:20:55,464 p=47912 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 23:20:55,465 p=47912 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=6    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 23:20:55,465 p=47912 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=6    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 23:49:05,030 p=48370 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 23:49:05,061 p=48370 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 23:49:07,349 p=48370 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 23:49:07,350 p=48370 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:49:10,090 p=48370 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 23:49:10,090 p=48370 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:49:10,100 p=48370 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 23:49:10,149 p=48370 u=vagrant n=ansible | included: TP_INI for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-28 23:49:10,161 p=48370 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 23:49:10,197 p=48370 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 23:49:10,209 p=48370 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 23:49:10,224 p=48370 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 23:49:10,765 p=48370 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:49:11,107 p=48370 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:49:11,123 p=48370 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 23:49:12,313 p=48370 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:49:12,652 p=48370 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:49:12,669 p=48370 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios] ********************************************
+2026-06-28 23:49:12,732 p=48370 u=vagrant n=ansible | included: Alta_Usuarios for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-28 23:49:12,744 p=48370 u=vagrant n=ansible | TASK [Alta_Usuarios : Crear grupos primarios] **********************************
+2026-06-28 23:49:13,660 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-28 23:49:13,993 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-28 23:49:14,293 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-28 23:49:14,397 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-28 23:49:14,861 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-28 23:49:15,160 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-28 23:49:15,390 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-28 23:49:15,562 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-28 23:49:16,293 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-28 23:49:17,142 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-28 23:49:17,928 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-28 23:49:18,813 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-28 23:49:18,835 p=48370 u=vagrant n=ansible | TASK [Alta_Usuarios : Obtener hash de password de vagrant] *********************
+2026-06-28 23:49:19,476 p=48370 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:49:19,829 p=48370 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:49:19,839 p=48370 u=vagrant n=ansible | TASK [Alta_Usuarios : DEBUG - ver el hash obtenido] ****************************
+2026-06-28 23:49:19,883 p=48370 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-28 23:49:19,903 p=48370 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-28 23:49:19,911 p=48370 u=vagrant n=ansible | TASK [Alta_Usuarios : Crear usuarios R1 a R6] **********************************
+2026-06-28 23:49:20,828 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-28 23:49:21,206 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-28 23:49:21,525 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-28 23:49:21,718 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-28 23:49:22,267 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-28 23:49:22,677 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-28 23:49:22,772 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-28 23:49:23,160 p=48370 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-28 23:49:23,748 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-28 23:49:24,756 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-28 23:49:25,697 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-28 23:49:26,745 p=48370 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-28 23:49:26,765 p=48370 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-28 23:49:26,793 p=48370 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 23:49:26,807 p=48370 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-28 23:49:26,811 p=48370 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 23:49:26,812 p=48370 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 23:49:26,812 p=48370 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=11   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-28 23:59:33,337 p=49152 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-28 23:59:33,348 p=49152 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-28 23:59:35,296 p=49152 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 23:59:35,297 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:59:35,759 p=49152 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-28 23:59:35,759 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:59:35,768 p=49152 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-28 23:59:35,841 p=49152 u=vagrant n=ansible | included: TP_INI for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-28 23:59:35,856 p=49152 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-28 23:59:35,903 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 23:59:35,909 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-28 23:59:35,923 p=49152 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-28 23:59:36,543 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:59:36,926 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:59:36,937 p=49152 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-28 23:59:37,816 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:59:38,394 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:59:38,422 p=49152 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios] ********************************************
+2026-06-28 23:59:38,488 p=49152 u=vagrant n=ansible | included: Alta_Usuarios for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-28 23:59:38,498 p=49152 u=vagrant n=ansible | TASK [Alta_Usuarios : Crear grupos primarios] **********************************
+2026-06-28 23:59:39,160 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-28 23:59:39,503 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-28 23:59:39,658 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-28 23:59:39,901 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-28 23:59:40,284 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-28 23:59:40,600 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-28 23:59:40,670 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-28 23:59:40,966 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-28 23:59:41,518 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-28 23:59:42,293 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-28 23:59:43,107 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-28 23:59:43,975 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-28 23:59:43,995 p=49152 u=vagrant n=ansible | TASK [Alta_Usuarios : Obtener hash de password de vagrant] *********************
+2026-06-28 23:59:44,586 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-28 23:59:44,931 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-28 23:59:44,940 p=49152 u=vagrant n=ansible | TASK [Alta_Usuarios : DEBUG - ver el hash obtenido] ****************************
+2026-06-28 23:59:44,975 p=49152 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-28 23:59:44,987 p=49152 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-28 23:59:44,996 p=49152 u=vagrant n=ansible | TASK [Alta_Usuarios : Crear usuarios R1 a R6] **********************************
+2026-06-28 23:59:45,755 p=49152 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R1", "nombre": "R1", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:46,155 p=49152 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R2", "nombre": "R2", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:46,210 p=49152 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R1", "nombre": "R1", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:46,697 p=49152 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R3", "nombre": "R3", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:47,124 p=49152 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R4", "nombre": "R4", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:47,349 p=49152 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R2", "nombre": "R2", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:47,536 p=49152 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R5", "nombre": "R5", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:47,996 p=49152 u=vagrant n=ansible | failed: [VM1-Grupo-ASANCHEZ] (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R6", "nombre": "R6", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:48,381 p=49152 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R3", "nombre": "R3", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:49,214 p=49152 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R4", "nombre": "R4", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:50,036 p=49152 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R5", "nombre": "R5", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:50,852 p=49152 u=vagrant n=ansible | failed: [VM2-Grupo-ASANCHEZ] (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'}) => {"ansible_loop_var": "item", "changed": false, "item": {"apellido": "Sanchez", "grupo": "G_R6", "nombre": "R6", "nombre_real": "Agustin"}, "msg": "Group ASANCHEZ does not exist"}
+2026-06-28 23:59:50,860 p=49152 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-28 23:59:50,861 p=49152 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=9    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-28 23:59:50,862 p=49152 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=9    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-29 00:01:20,354 p=49864 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 00:01:20,365 p=49864 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 00:01:22,346 p=49864 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 00:01:22,347 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 00:01:22,763 p=49864 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 00:01:22,766 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 00:01:22,776 p=49864 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2026-06-29 00:01:22,827 p=49864 u=vagrant n=ansible | included: TP_INI for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 00:01:22,837 p=49864 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: ASANCHEZ] **********************************
+2026-06-29 00:01:22,865 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 00:01:22,878 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 00:01:22,890 p=49864 u=vagrant n=ansible | TASK [TP_INI : Crear directorio /tmp/Grupo] ************************************
+2026-06-29 00:01:23,516 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 00:01:23,795 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 00:01:23,804 p=49864 u=vagrant n=ansible | TASK [TP_INI : Generar archivo datos.txt desde template] ***********************
+2026-06-29 00:01:24,902 p=49864 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ]
+2026-06-29 00:01:25,514 p=49864 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ]
+2026-06-29 00:01:25,537 p=49864 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios] ********************************************
+2026-06-29 00:01:25,620 p=49864 u=vagrant n=ansible | included: Alta_Usuarios for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 00:01:25,638 p=49864 u=vagrant n=ansible | TASK [Alta_Usuarios : Crear grupos primarios] **********************************
+2026-06-29 00:01:26,323 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 00:01:26,673 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 00:01:26,811 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 00:01:27,061 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 00:01:27,422 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 00:01:27,807 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 00:01:27,853 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 00:01:28,152 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 00:01:28,619 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 00:01:29,336 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 00:01:30,121 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 00:01:30,895 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 00:01:30,916 p=49864 u=vagrant n=ansible | TASK [Alta_Usuarios : Crear grupo secundario] **********************************
+2026-06-29 00:01:31,343 p=49864 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ]
+2026-06-29 00:01:31,968 p=49864 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ]
+2026-06-29 00:01:31,978 p=49864 u=vagrant n=ansible | TASK [Alta_Usuarios : Obtener hash de password de vagrant] *********************
+2026-06-29 00:01:32,536 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 00:01:32,930 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 00:01:32,944 p=49864 u=vagrant n=ansible | TASK [Alta_Usuarios : DEBUG - ver el hash obtenido] ****************************
+2026-06-29 00:01:32,998 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 00:01:33,011 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 00:01:33,027 p=49864 u=vagrant n=ansible | TASK [Alta_Usuarios : Crear usuarios R1 a R6] **********************************
+2026-06-29 00:01:33,725 p=49864 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 00:01:34,172 p=49864 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 00:01:34,309 p=49864 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 00:01:34,742 p=49864 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 00:01:35,172 p=49864 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 00:01:35,478 p=49864 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 00:01:35,617 p=49864 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 00:01:36,101 p=49864 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 00:01:36,574 p=49864 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 00:01:37,534 p=49864 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 00:01:38,470 p=49864 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 00:01:39,421 p=49864 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 00:01:39,442 p=49864 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2026-06-29 00:01:39,473 p=49864 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-29 00:01:39,490 p=49864 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2026-06-29 00:01:39,493 p=49864 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-29 00:01:39,493 p=49864 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-29 00:01:39,493 p=49864 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=12   changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-29 00:07:56,702 p=50636 u=vagrant n=ansible | - Role Sudoers_ASANCHEZ was created successfully
+2026-06-29 01:03:24,430 p=50669 u=vagrant n=ansible | - Role roles/Sudoers_ASANCHEZ was created successfully
+2026-06-29 01:20:13,185 p=50970 u=vagrant n=ansible | ERROR! 'name' is a required field for include_role.
+
+The error appears to be in '/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/playbook.yml': line 18, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+    - include_role:
+      ^ here
+
+2026-06-29 01:21:37,727 p=50977 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 01:21:37,867 p=50977 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 01:21:42,259 p=50977 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 01:21:42,260 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:21:42,759 p=50977 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 01:21:42,760 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:21:42,770 p=50977 u=vagrant n=ansible | TASK [include_role : TP_INI_ASANCHEZ] ******************************************
+2026-06-29 01:21:42,816 p=50977 u=vagrant n=ansible | included: TP_INI_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 01:21:42,825 p=50977 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Rol: TP_INI - Grupo: ASANCHEZ] *************************
+2026-06-29 01:21:42,867 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 01:21:42,876 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 01:21:42,889 p=50977 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Crear directorio /tmp/Grupo] ***************************
+2026-06-29 01:21:43,496 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:21:43,768 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:21:43,777 p=50977 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Generar archivo datos.txt desde template] **************
+2026-06-29 01:21:44,684 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:21:45,296 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:21:45,313 p=50977 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_ASANCHEZ] ***********************************
+2026-06-29 01:21:45,365 p=50977 u=vagrant n=ansible | included: Alta_Usuarios_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 01:21:45,375 p=50977 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupos primarios] *************************
+2026-06-29 01:21:45,931 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:21:46,239 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:21:46,439 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:21:46,608 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:21:47,000 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:21:47,323 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:21:47,519 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:21:47,694 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:21:48,294 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:21:49,183 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:21:49,961 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:21:50,742 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:21:50,753 p=50977 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupo secundario] *************************
+2026-06-29 01:21:51,145 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:21:51,525 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:21:51,534 p=50977 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Obtener hash de password de vagrant] ************
+2026-06-29 01:21:52,144 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:21:52,507 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:21:52,515 p=50977 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : DEBUG - ver el hash obtenido] *******************
+2026-06-29 01:21:52,565 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 01:21:52,574 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 01:21:52,590 p=50977 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear usuarios R1 a R6] *************************
+2026-06-29 01:21:53,580 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:21:53,613 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:21:54,081 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:21:54,499 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:21:54,805 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:21:54,940 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:21:55,404 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:21:55,801 p=50977 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:21:55,900 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:21:56,646 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:21:57,396 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:21:58,190 p=50977 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:21:58,212 p=50977 u=vagrant n=ansible | TASK [include_role : Sudoers_ASANCHEZ] *****************************************
+2026-06-29 01:21:58,307 p=50977 u=vagrant n=ansible | included: Sudoers_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 01:21:58,324 p=50977 u=vagrant n=ansible | TASK [Sudoers_ASANCHEZ : Permitir sudo sin contraseña al grupo ASANCHEZ] *******
+2026-06-29 01:21:58,806 p=50977 u=vagrant n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/home/vagrant/.ansible/tmp/ansible-tmp-1782696118.3769712-51675-269267919579244/tmpnbr3vyb3' -> b'/etc/sudoers.d/ASANCHEZ'
+2026-06-29 01:21:58,807 p=50977 u=vagrant n=ansible | fatal: [VM1-Grupo-ASANCHEZ]: FAILED! => {"changed": false, "msg": "The destination directory (/etc/sudoers.d) is not writable by the current user. Error was: [Errno 13] Permission denied: b'/etc/sudoers.d/.ansible_tmpvrn4njnzASANCHEZ'"}
+2026-06-29 01:21:59,200 p=50977 u=vagrant n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: PermissionError: [Errno 13] Permission denied: b'/home/vagrant/.ansible/tmp/ansible-tmp-1782696118.4627259-51677-203781919972440/tmp52pjnm91' -> b'/etc/sudoers.d/ASANCHEZ'
+2026-06-29 01:21:59,201 p=50977 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: FAILED! => {"changed": false, "msg": "The destination directory (/etc/sudoers.d) is not writable by the current user. Error was: [Errno 13] Permission denied: b'/etc/sudoers.d/.ansible_tmpjaspqnmiASANCHEZ'"}
+2026-06-29 01:21:59,204 p=50977 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-29 01:21:59,204 p=50977 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=12   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-29 01:21:59,205 p=50977 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=12   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-29 01:23:16,738 p=51710 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 01:23:16,763 p=51710 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 01:23:18,357 p=51710 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 01:23:18,358 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:23:18,749 p=51710 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 01:23:18,750 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:23:18,758 p=51710 u=vagrant n=ansible | TASK [include_role : TP_INI_ASANCHEZ] ******************************************
+2026-06-29 01:23:18,812 p=51710 u=vagrant n=ansible | included: TP_INI_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 01:23:18,822 p=51710 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Rol: TP_INI - Grupo: ASANCHEZ] *************************
+2026-06-29 01:23:18,853 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 01:23:18,866 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 01:23:18,876 p=51710 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Crear directorio /tmp/Grupo] ***************************
+2026-06-29 01:23:19,423 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:23:19,765 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:23:19,774 p=51710 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Generar archivo datos.txt desde template] **************
+2026-06-29 01:23:20,511 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:23:21,113 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:23:21,131 p=51710 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_ASANCHEZ] ***********************************
+2026-06-29 01:23:21,186 p=51710 u=vagrant n=ansible | included: Alta_Usuarios_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 01:23:21,196 p=51710 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupos primarios] *************************
+2026-06-29 01:23:21,741 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:23:22,043 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:23:22,215 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:23:22,443 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:23:22,806 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:23:23,107 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:23:23,215 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:23:23,475 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:23:23,954 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:23:24,694 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:23:25,546 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:23:26,234 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:23:26,245 p=51710 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupo secundario] *************************
+2026-06-29 01:23:26,564 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:23:26,951 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:23:26,959 p=51710 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Obtener hash de password de vagrant] ************
+2026-06-29 01:23:27,437 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:23:27,769 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:23:27,777 p=51710 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : DEBUG - ver el hash obtenido] *******************
+2026-06-29 01:23:27,806 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 01:23:27,823 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 01:23:27,832 p=51710 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear usuarios R1 a R6] *************************
+2026-06-29 01:23:28,559 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:23:29,030 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:23:29,070 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:23:29,511 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:23:29,919 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:23:30,204 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:23:30,369 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:23:30,765 p=51710 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:23:31,138 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:23:31,883 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:23:32,660 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:23:33,394 p=51710 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:23:33,416 p=51710 u=vagrant n=ansible | TASK [include_role : Sudoers_ASANCHEZ] *****************************************
+2026-06-29 01:23:33,522 p=51710 u=vagrant n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context. mapping values are not allowed in this context
+  in "<unicode string>", line 6, column 11
+
+The error appears to be in '/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/roles/Sudoers_ASANCHEZ/tasks/main.yml': line 6, column 11, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- name: Permitir sudo sin contraseña al grupo ASANCHEZ
+    become: yes
+          ^ here
+
+2026-06-29 01:23:55,245 p=52409 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 01:23:55,268 p=52409 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 01:23:56,943 p=52409 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 01:23:56,944 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:23:57,205 p=52409 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 01:23:57,205 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:23:57,214 p=52409 u=vagrant n=ansible | TASK [include_role : TP_INI_ASANCHEZ] ******************************************
+2026-06-29 01:23:57,263 p=52409 u=vagrant n=ansible | included: TP_INI_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 01:23:57,273 p=52409 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Rol: TP_INI - Grupo: ASANCHEZ] *************************
+2026-06-29 01:23:57,306 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 01:23:57,325 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 01:23:57,334 p=52409 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Crear directorio /tmp/Grupo] ***************************
+2026-06-29 01:23:57,812 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:23:58,109 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:23:58,122 p=52409 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Generar archivo datos.txt desde template] **************
+2026-06-29 01:23:58,990 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:23:59,605 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:23:59,622 p=52409 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_ASANCHEZ] ***********************************
+2026-06-29 01:23:59,676 p=52409 u=vagrant n=ansible | included: Alta_Usuarios_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 01:23:59,687 p=52409 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupos primarios] *************************
+2026-06-29 01:24:00,222 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:24:00,514 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:24:00,722 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:24:00,825 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:24:01,251 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:24:01,635 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:24:01,874 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:24:01,991 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:24:02,577 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:24:03,289 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:24:04,049 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:24:04,713 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:24:04,731 p=52409 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupo secundario] *************************
+2026-06-29 01:24:05,090 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:24:05,561 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:24:05,582 p=52409 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Obtener hash de password de vagrant] ************
+2026-06-29 01:24:06,092 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:24:06,485 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:24:06,499 p=52409 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : DEBUG - ver el hash obtenido] *******************
+2026-06-29 01:24:06,541 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 01:24:06,558 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 01:24:06,568 p=52409 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear usuarios R1 a R6] *************************
+2026-06-29 01:24:07,313 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:24:07,750 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:24:07,781 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 01:24:08,216 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:24:08,545 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:24:08,835 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 01:24:08,971 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:24:09,437 p=52409 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:24:09,788 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 01:24:10,606 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 01:24:11,336 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 01:24:12,093 p=52409 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 01:24:12,116 p=52409 u=vagrant n=ansible | TASK [include_role : Sudoers_ASANCHEZ] *****************************************
+2026-06-29 01:24:12,194 p=52409 u=vagrant n=ansible | included: Sudoers_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 01:24:12,206 p=52409 u=vagrant n=ansible | TASK [Sudoers_ASANCHEZ : Permitir sudo sin contraseña al grupo ASANCHEZ] *******
+2026-06-29 01:24:12,646 p=52409 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ]
+2026-06-29 01:24:13,044 p=52409 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ]
+2026-06-29 01:24:13,063 p=52409 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-29 01:24:13,064 p=52409 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=13   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-29 01:24:13,066 p=52409 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=13   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:21:14,538 p=53731 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 02:21:14,705 p=53731 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 02:21:18,839 p=53731 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:21:18,843 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:21:19,157 p=53731 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:21:19,158 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:21:19,167 p=53731 u=vagrant n=ansible | TASK [include_role : TP_INI_ASANCHEZ] ******************************************
+2026-06-29 02:21:19,223 p=53731 u=vagrant n=ansible | included: TP_INI_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:21:19,236 p=53731 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Rol: TP_INI - Grupo: ASANCHEZ] *************************
+2026-06-29 02:21:19,270 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:21:19,291 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:21:19,300 p=53731 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Crear directorio /tmp/Grupo] ***************************
+2026-06-29 02:21:20,297 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:21:20,755 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:21:20,767 p=53731 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Generar archivo datos.txt desde template] **************
+2026-06-29 02:21:21,714 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:21:22,388 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:21:22,409 p=53731 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_ASANCHEZ] ***********************************
+2026-06-29 02:21:22,464 p=53731 u=vagrant n=ansible | included: Alta_Usuarios_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:21:22,474 p=53731 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupos primarios] *************************
+2026-06-29 02:21:23,140 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:21:23,429 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:21:23,544 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:21:23,758 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:21:24,111 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:21:24,434 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:21:24,467 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:21:24,850 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:21:25,363 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:21:26,214 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:21:26,933 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:21:27,685 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:21:27,699 p=53731 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupo secundario] *************************
+2026-06-29 02:21:28,099 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:21:28,632 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:21:28,649 p=53731 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Obtener hash de password de vagrant] ************
+2026-06-29 02:21:29,260 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:21:29,624 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:21:29,632 p=53731 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : DEBUG - ver el hash obtenido] *******************
+2026-06-29 02:21:29,679 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 02:21:29,680 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 02:21:29,688 p=53731 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear usuarios R1 a R6] *************************
+2026-06-29 02:21:30,686 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:21:30,850 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:21:31,404 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:21:31,765 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:21:32,097 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:21:32,205 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:21:32,631 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:21:33,026 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:21:33,190 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:21:33,942 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:21:34,623 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:21:35,487 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:21:35,508 p=53731 u=vagrant n=ansible | TASK [include_role : Sudoers_ASANCHEZ] *****************************************
+2026-06-29 02:21:35,601 p=53731 u=vagrant n=ansible | included: Sudoers_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:21:35,624 p=53731 u=vagrant n=ansible | TASK [Sudoers_ASANCHEZ : Permitir sudo sin contraseña al grupo ASANCHEZ] *******
+2026-06-29 02:21:36,121 p=53731 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:21:36,510 p=53731 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:21:36,530 p=53731 u=vagrant n=ansible | TASK [include_role : Instala_tool_ASANCHEZ] ************************************
+2026-06-29 02:21:36,595 p=53731 u=vagrant n=ansible | ERROR! the role 'Instala_tool_ASANCHEZ' was not found in /home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/roles:/tmp:/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0:/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible
+
+The error appears to be in '/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/playbook.yml': line 22, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - include_role:
+        name: Instala_tool_ASANCHEZ
+              ^ here
+
+2026-06-29 02:21:36,596 p=53731 u=vagrant n=ansible | fatal: [VM1-Grupo-ASANCHEZ]: FAILED! => {"changed": false, "reason": "the role 'Instala_tool_ASANCHEZ' was not found in /home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/roles:/tmp:/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0:/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible\n\nThe error appears to be in '/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/playbook.yml': line 22, column 15, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n    - include_role:\n        name: Instala_tool_ASANCHEZ\n              ^ here\n"}
+2026-06-29 02:21:36,597 p=53731 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: FAILED! => {"changed": false, "reason": "the role 'Instala_tool_ASANCHEZ' was not found in /home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/roles:/tmp:/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0:/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible\n\nThe error appears to be in '/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/playbook.yml': line 22, column 15, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n    - include_role:\n        name: Instala_tool_ASANCHEZ\n              ^ here\n"}
+2026-06-29 02:21:36,598 p=53731 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-29 02:21:36,598 p=53731 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=13   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:21:36,598 p=53731 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=13   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:23:06,180 p=54489 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 02:23:06,208 p=54489 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 02:23:07,966 p=54489 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:23:07,967 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:23:08,236 p=54489 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:23:08,236 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:23:08,246 p=54489 u=vagrant n=ansible | TASK [include_role : TP_INI_ASANCHEZ] ******************************************
+2026-06-29 02:23:08,293 p=54489 u=vagrant n=ansible | included: TP_INI_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:23:08,304 p=54489 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Rol: TP_INI - Grupo: ASANCHEZ] *************************
+2026-06-29 02:23:08,341 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:23:08,359 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:23:08,367 p=54489 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Crear directorio /tmp/Grupo] ***************************
+2026-06-29 02:23:09,000 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:23:09,359 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:23:09,369 p=54489 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Generar archivo datos.txt desde template] **************
+2026-06-29 02:23:10,074 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:23:10,645 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:23:10,669 p=54489 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_ASANCHEZ] ***********************************
+2026-06-29 02:23:10,733 p=54489 u=vagrant n=ansible | included: Alta_Usuarios_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:23:10,745 p=54489 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupos primarios] *************************
+2026-06-29 02:23:11,381 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:23:11,705 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:23:11,990 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:23:12,072 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:23:12,421 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:23:12,729 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:23:12,949 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:23:13,064 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:23:13,724 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:23:14,517 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:23:15,262 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:23:16,028 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:23:16,047 p=54489 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupo secundario] *************************
+2026-06-29 02:23:16,362 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:23:16,878 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:23:16,890 p=54489 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Obtener hash de password de vagrant] ************
+2026-06-29 02:23:17,455 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:23:17,805 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:23:17,818 p=54489 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : DEBUG - ver el hash obtenido] *******************
+2026-06-29 02:23:17,856 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 02:23:17,863 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 02:23:17,871 p=54489 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear usuarios R1 a R6] *************************
+2026-06-29 02:23:18,689 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:23:19,081 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:23:19,094 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:23:19,556 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:23:19,988 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:23:20,234 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:23:20,485 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:23:20,930 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:23:21,329 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:23:22,201 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:23:22,941 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:23:23,722 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:23:23,754 p=54489 u=vagrant n=ansible | TASK [include_role : Sudoers_ASANCHEZ] *****************************************
+2026-06-29 02:23:23,836 p=54489 u=vagrant n=ansible | included: Sudoers_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:23:23,849 p=54489 u=vagrant n=ansible | TASK [Sudoers_ASANCHEZ : Permitir sudo sin contraseña al grupo ASANCHEZ] *******
+2026-06-29 02:23:24,428 p=54489 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:23:24,812 p=54489 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:23:24,831 p=54489 u=vagrant n=ansible | TASK [include_role : Instala_Tool_ASANCHEZ] ************************************
+2026-06-29 02:23:24,885 p=54489 u=vagrant n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key. while parsing a block mapping
+  in "<unicode string>", line 6, column 4
+did not find expected key
+  in "<unicode string>", line 12, column 5
+
+The error appears to be in '/home/vagrant/TP_AySO_Integral_ASANCHEZ_2.0/ansible/roles/Instala_Tool_ASANCHEZ/tasks/main.yml': line 12, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+          - speedtest-cli
+    state: present
+    ^ here
+
+2026-06-29 02:24:26,368 p=55276 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 02:24:26,392 p=55276 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 02:24:28,132 p=55276 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:24:28,132 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:24:28,488 p=55276 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:24:28,488 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:24:28,509 p=55276 u=vagrant n=ansible | TASK [include_role : TP_INI_ASANCHEZ] ******************************************
+2026-06-29 02:24:28,568 p=55276 u=vagrant n=ansible | included: TP_INI_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:24:28,584 p=55276 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Rol: TP_INI - Grupo: ASANCHEZ] *************************
+2026-06-29 02:24:28,614 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:24:28,631 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:24:28,647 p=55276 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Crear directorio /tmp/Grupo] ***************************
+2026-06-29 02:24:29,239 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:24:29,573 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:24:29,583 p=55276 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Generar archivo datos.txt desde template] **************
+2026-06-29 02:24:30,340 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:24:31,056 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:24:31,075 p=55276 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_ASANCHEZ] ***********************************
+2026-06-29 02:24:31,128 p=55276 u=vagrant n=ansible | included: Alta_Usuarios_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:24:31,138 p=55276 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupos primarios] *************************
+2026-06-29 02:24:31,765 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:24:32,075 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:24:32,210 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:24:32,464 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:24:32,821 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:24:33,144 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:24:33,201 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:24:33,534 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:24:34,076 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:24:34,877 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:24:35,807 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:24:36,506 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:24:36,531 p=55276 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupo secundario] *************************
+2026-06-29 02:24:36,941 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:24:37,424 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:24:37,433 p=55276 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Obtener hash de password de vagrant] ************
+2026-06-29 02:24:38,010 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:24:38,350 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:24:38,359 p=55276 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : DEBUG - ver el hash obtenido] *******************
+2026-06-29 02:24:38,415 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 02:24:38,417 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 02:24:38,424 p=55276 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear usuarios R1 a R6] *************************
+2026-06-29 02:24:39,149 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:24:39,556 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:24:39,606 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:24:40,036 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:24:40,450 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:24:40,894 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:24:40,903 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:24:41,353 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:24:41,861 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:24:42,657 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:24:43,480 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:24:44,245 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:24:44,267 p=55276 u=vagrant n=ansible | TASK [include_role : Sudoers_ASANCHEZ] *****************************************
+2026-06-29 02:24:44,354 p=55276 u=vagrant n=ansible | included: Sudoers_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:24:44,366 p=55276 u=vagrant n=ansible | TASK [Sudoers_ASANCHEZ : Permitir sudo sin contraseña al grupo ASANCHEZ] *******
+2026-06-29 02:24:44,865 p=55276 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:24:45,336 p=55276 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:24:45,355 p=55276 u=vagrant n=ansible | TASK [include_role : Instala_Tool_ASANCHEZ] ************************************
+2026-06-29 02:24:45,429 p=55276 u=vagrant n=ansible | included: Instala_Tool_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:24:45,497 p=55276 u=vagrant n=ansible | TASK [Instala_Tool_ASANCHEZ : Instalar aplicaciones] ***************************
+2026-06-29 02:24:46,206 p=55276 u=vagrant n=ansible | fatal: [VM1-Grupo-ASANCHEZ]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (ansible.legacy.apt) module: estate. Supported parameters include: allow_change_held_packages, allow_downgrade, allow_unauthenticated, autoclean, autoremove, cache_valid_time, clean, deb, default_release, dpkg_options, fail_on_autoremove, force, force_apt_get, install_recommends, lock_timeout, only_upgrade, package, policy_rc_d, purge, state, update_cache, update_cache_retries, update_cache_retry_max_delay, upgrade (allow-downgrade, allow-downgrades, allow-unauthenticated, allow_downgrades, default-release, install-recommends, name, pkg, update-cache)."}
+2026-06-29 02:24:46,814 p=55276 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (ansible.legacy.dnf) module: estate. Supported parameters include: allow_downgrade, allowerasing, autoremove, best, bugfix, cacheonly, conf_file, disable_excludes, disable_gpg_check, disable_plugin, disablerepo, download_dir, download_only, enable_plugin, enablerepo, exclude, install_repoquery, install_weak_deps, installroot, list, lock_timeout, name, nobest, releasever, security, skip_broken, sslverify, state, update_cache, update_only, use_backend, validate_certs (expire-cache, pkg)."}
+2026-06-29 02:24:46,818 p=55276 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-29 02:24:46,819 p=55276 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=14   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:24:46,820 p=55276 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=14   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:26:07,964 p=56048 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 02:26:07,999 p=56048 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 02:26:10,085 p=56048 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:26:10,086 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:26:10,386 p=56048 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:26:10,386 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:26:10,400 p=56048 u=vagrant n=ansible | TASK [include_role : TP_INI_ASANCHEZ] ******************************************
+2026-06-29 02:26:10,472 p=56048 u=vagrant n=ansible | included: TP_INI_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:26:10,486 p=56048 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Rol: TP_INI - Grupo: ASANCHEZ] *************************
+2026-06-29 02:26:10,543 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:26:10,561 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:26:10,577 p=56048 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Crear directorio /tmp/Grupo] ***************************
+2026-06-29 02:26:11,196 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:26:11,535 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:26:11,545 p=56048 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Generar archivo datos.txt desde template] **************
+2026-06-29 02:26:12,391 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:26:13,120 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:26:13,142 p=56048 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_ASANCHEZ] ***********************************
+2026-06-29 02:26:13,197 p=56048 u=vagrant n=ansible | included: Alta_Usuarios_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:26:13,211 p=56048 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupos primarios] *************************
+2026-06-29 02:26:13,903 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:26:14,207 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:26:14,332 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:26:14,615 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:26:14,964 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:26:15,273 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:26:15,326 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:26:15,633 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:26:16,140 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:26:17,164 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:26:18,114 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:26:18,898 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:26:18,910 p=56048 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupo secundario] *************************
+2026-06-29 02:26:19,359 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:26:19,819 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:26:19,829 p=56048 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Obtener hash de password de vagrant] ************
+2026-06-29 02:26:20,495 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:26:20,913 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:26:20,922 p=56048 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : DEBUG - ver el hash obtenido] *******************
+2026-06-29 02:26:20,949 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 02:26:20,967 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 02:26:20,976 p=56048 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear usuarios R1 a R6] *************************
+2026-06-29 02:26:21,622 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:26:22,068 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:26:22,100 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:26:22,598 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:26:22,996 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:26:23,304 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:26:23,504 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:26:23,929 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:26:24,348 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:26:25,078 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:26:25,921 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:26:26,650 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:26:26,680 p=56048 u=vagrant n=ansible | TASK [include_role : Sudoers_ASANCHEZ] *****************************************
+2026-06-29 02:26:26,777 p=56048 u=vagrant n=ansible | included: Sudoers_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:26:26,800 p=56048 u=vagrant n=ansible | TASK [Sudoers_ASANCHEZ : Permitir sudo sin contraseña al grupo ASANCHEZ] *******
+2026-06-29 02:26:27,359 p=56048 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:26:27,741 p=56048 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:26:27,765 p=56048 u=vagrant n=ansible | TASK [include_role : Instala_Tool_ASANCHEZ] ************************************
+2026-06-29 02:26:27,866 p=56048 u=vagrant n=ansible | included: Instala_Tool_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:26:27,885 p=56048 u=vagrant n=ansible | TASK [Instala_Tool_ASANCHEZ : Instalar aplicaciones] ***************************
+2026-06-29 02:26:29,515 p=56048 u=vagrant n=ansible | fatal: [VM2-Grupo-ASANCHEZ]: FAILED! => {"changed": false, "msg": "This command has to be run under the root user.", "results": []}
+2026-06-29 02:26:31,860 p=56048 u=vagrant n=ansible | fatal: [VM1-Grupo-ASANCHEZ]: FAILED! => {"changed": false, "msg": "'/usr/bin/apt-mark manual htop tmux speedtest-cli' failed: E: Could not create temporary file for /var/lib/apt/extended_states - mkstemp (13: Permission denied)\nE: Failed to write temporary StateFile /var/lib/apt/extended_states\n", "rc": 100, "stderr": "E: Could not create temporary file for /var/lib/apt/extended_states - mkstemp (13: Permission denied)\nE: Failed to write temporary StateFile /var/lib/apt/extended_states\n", "stderr_lines": ["E: Could not create temporary file for /var/lib/apt/extended_states - mkstemp (13: Permission denied)", "E: Failed to write temporary StateFile /var/lib/apt/extended_states"], "stdout": "speedtest-cli can not be marked as it is not installed.\n", "stdout_lines": ["speedtest-cli can not be marked as it is not installed."]}
+2026-06-29 02:26:31,865 p=56048 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-29 02:26:31,869 p=56048 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=14   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:26:31,869 p=56048 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=14   changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:27:02,762 p=56827 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 02:27:02,792 p=56827 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 02:27:04,525 p=56827 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:27:04,526 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:27:04,769 p=56827 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:27:04,769 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:27:04,778 p=56827 u=vagrant n=ansible | TASK [include_role : TP_INI_ASANCHEZ] ******************************************
+2026-06-29 02:27:04,828 p=56827 u=vagrant n=ansible | included: TP_INI_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:27:04,842 p=56827 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Rol: TP_INI - Grupo: ASANCHEZ] *************************
+2026-06-29 02:27:04,878 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:27:04,893 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:27:04,905 p=56827 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Crear directorio /tmp/Grupo] ***************************
+2026-06-29 02:27:05,523 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:27:05,828 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:27:05,838 p=56827 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Generar archivo datos.txt desde template] **************
+2026-06-29 02:27:06,707 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:27:07,417 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:27:07,435 p=56827 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_ASANCHEZ] ***********************************
+2026-06-29 02:27:07,507 p=56827 u=vagrant n=ansible | included: Alta_Usuarios_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:27:07,525 p=56827 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupos primarios] *************************
+2026-06-29 02:27:08,085 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:27:08,399 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:27:08,538 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:27:08,810 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:27:09,181 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:27:09,488 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:27:09,514 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:27:09,832 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:27:10,401 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:27:11,149 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:27:11,828 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:27:12,532 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:27:12,546 p=56827 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupo secundario] *************************
+2026-06-29 02:27:12,973 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:27:13,497 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:27:13,510 p=56827 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Obtener hash de password de vagrant] ************
+2026-06-29 02:27:14,037 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:27:14,319 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:27:14,328 p=56827 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : DEBUG - ver el hash obtenido] *******************
+2026-06-29 02:27:14,354 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 02:27:14,378 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 02:27:14,395 p=56827 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear usuarios R1 a R6] *************************
+2026-06-29 02:27:15,103 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:27:15,485 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:27:15,499 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:27:15,975 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:27:16,399 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:27:16,608 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:27:16,816 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:27:17,262 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:27:17,561 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:27:18,399 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:27:19,119 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:27:19,839 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:27:19,871 p=56827 u=vagrant n=ansible | TASK [include_role : Sudoers_ASANCHEZ] *****************************************
+2026-06-29 02:27:19,969 p=56827 u=vagrant n=ansible | included: Sudoers_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:27:19,989 p=56827 u=vagrant n=ansible | TASK [Sudoers_ASANCHEZ : Permitir sudo sin contraseña al grupo ASANCHEZ] *******
+2026-06-29 02:27:20,571 p=56827 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:27:20,924 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:27:20,954 p=56827 u=vagrant n=ansible | TASK [include_role : Instala_Tool_ASANCHEZ] ************************************
+2026-06-29 02:27:21,023 p=56827 u=vagrant n=ansible | included: Instala_Tool_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:27:21,038 p=56827 u=vagrant n=ansible | TASK [Instala_Tool_ASANCHEZ : Instalar aplicaciones] ***************************
+2026-06-29 02:27:34,020 p=56827 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:27:37,244 p=56827 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:27:37,279 p=56827 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-29 02:27:37,280 p=56827 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=15   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:27:37,281 p=56827 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=15   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:33:42,591 p=58118 u=vagrant n=ansible | PLAY [testing,produccion] ******************************************************
+2026-06-29 02:33:42,692 p=58118 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2026-06-29 02:33:45,045 p=58118 u=vagrant n=ansible | [WARNING]: Platform linux on host VM1-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.10, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:33:45,047 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:33:45,093 p=58118 u=vagrant n=ansible | [WARNING]: Platform linux on host VM2-Grupo-ASANCHEZ is using the discovered
+Python interpreter at /usr/bin/python3.12, but future installation of another
+Python interpreter could change the meaning of that path. See
+https://docs.ansible.com/ansible-
+core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-29 02:33:45,094 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:33:45,110 p=58118 u=vagrant n=ansible | TASK [include_role : TP_INI_ASANCHEZ] ******************************************
+2026-06-29 02:33:45,182 p=58118 u=vagrant n=ansible | included: TP_INI_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:33:45,206 p=58118 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Rol: TP_INI - Grupo: ASANCHEZ] *************************
+2026-06-29 02:33:45,254 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:33:45,266 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2026-06-29 02:33:45,275 p=58118 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Crear directorio /tmp/Grupo] ***************************
+2026-06-29 02:33:45,840 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:33:46,220 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:33:46,232 p=58118 u=vagrant n=ansible | TASK [TP_INI_ASANCHEZ : Generar archivo datos.txt desde template] **************
+2026-06-29 02:33:47,090 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:33:47,757 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:33:47,786 p=58118 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_ASANCHEZ] ***********************************
+2026-06-29 02:33:47,851 p=58118 u=vagrant n=ansible | included: Alta_Usuarios_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:33:47,864 p=58118 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupos primarios] *************************
+2026-06-29 02:33:48,503 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:33:48,816 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:33:48,885 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:33:49,140 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:33:49,472 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:33:49,793 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:33:49,812 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:33:50,227 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:33:50,693 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:33:51,405 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:33:52,100 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:33:52,718 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:33:52,738 p=58118 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear grupo secundario] *************************
+2026-06-29 02:33:53,249 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:33:53,666 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:33:53,678 p=58118 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Obtener hash de password de vagrant] ************
+2026-06-29 02:33:54,265 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:33:54,662 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:33:54,674 p=58118 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : DEBUG - ver el hash obtenido] *******************
+2026-06-29 02:33:54,703 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$nC6Mm9LNzQjPCMczk8eTs1$T6fbh1SvPQqpYi2MESxHYtxYCP7kHIa/U8dx1tZ2bE8"
+}
+2026-06-29 02:33:54,720 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => {
+    "hash_vagrant.stdout": "$y$j9T$R2R3qTTSDyuLe.vt9xSMaLXP$B/XYGuhW1KBPdbp76d32a2/Em/79PIc7a4dTI3wKeP2"
+}
+2026-06-29 02:33:54,732 p=58118 u=vagrant n=ansible | TASK [Alta_Usuarios_ASANCHEZ : Crear usuarios R1 a R6] *************************
+2026-06-29 02:33:55,454 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:33:55,848 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R1', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R1'})
+2026-06-29 02:33:55,922 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:33:56,338 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:33:56,690 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:33:56,874 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R2', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R2'})
+2026-06-29 02:33:57,126 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:33:57,550 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:33:57,847 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R3', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R3'})
+2026-06-29 02:33:58,751 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R4', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R4'})
+2026-06-29 02:33:59,468 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R5', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R5'})
+2026-06-29 02:34:00,376 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ] => (item={'nombre': 'R6', 'nombre_real': 'Agustin', 'apellido': 'Sanchez', 'grupo': 'G_R6'})
+2026-06-29 02:34:00,407 p=58118 u=vagrant n=ansible | TASK [include_role : Sudoers_ASANCHEZ] *****************************************
+2026-06-29 02:34:00,502 p=58118 u=vagrant n=ansible | included: Sudoers_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:34:00,519 p=58118 u=vagrant n=ansible | TASK [Sudoers_ASANCHEZ : Permitir sudo sin contraseña al grupo ASANCHEZ] *******
+2026-06-29 02:34:01,098 p=58118 u=vagrant n=ansible | ok: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:34:01,451 p=58118 u=vagrant n=ansible | ok: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:34:01,475 p=58118 u=vagrant n=ansible | TASK [include_role : Instala_Tool_ASANCHEZ] ************************************
+2026-06-29 02:34:01,552 p=58118 u=vagrant n=ansible | included: Instala_Tool_ASANCHEZ for VM1-Grupo-ASANCHEZ, VM2-Grupo-ASANCHEZ
+2026-06-29 02:34:01,570 p=58118 u=vagrant n=ansible | TASK [Instala_Tool_ASANCHEZ : Instalar aplicaciones] ***************************
+2026-06-29 02:34:15,163 p=58118 u=vagrant n=ansible | changed: [VM1-Grupo-ASANCHEZ]
+2026-06-29 02:34:22,012 p=58118 u=vagrant n=ansible | changed: [VM2-Grupo-ASANCHEZ]
+2026-06-29 02:34:22,032 p=58118 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2026-06-29 02:34:22,033 p=58118 u=vagrant n=ansible | VM1-Grupo-ASANCHEZ         : ok=15   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-29 02:34:22,034 p=58118 u=vagrant n=ansible | VM2-Grupo-ASANCHEZ         : ok=15   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

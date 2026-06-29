@@ -3,7 +3,8 @@ testing
 produccion
 
 [testing]
-127.0.0.1 
+VM1-Grupo-ASANCHEZ ansible_host=127.0.0.1 ansible_port=22 ansible_user=vagrant ansible_connection=local
 
 [produccion]
-localhost ansible_connection=local 
+VM2-Grupo-ASANCHEZ ansible_host=192.168.56.11 ansible_port=22 ansible_user=vagrant 
+

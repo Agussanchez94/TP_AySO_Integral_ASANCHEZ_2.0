@@ -1,0 +1,13 @@
+---
+# tasks file for Instala_Tool_ASANCHEZ
+
+
+
+ - name: Instalar aplicaciones
+   become: yes
+   ansible.builtin.package:
+     name:
+          - htop
+          - tmux
+          - speedtest-cli
+     state: present
